@@ -135,6 +135,19 @@ p{margin:0 0 1.15rem;max-width:36rem}
 .src{font-size:.85rem;color:var(--ink-soft);margin-top:2rem}
 .src a{color:var(--blue-soft)}
 
+/* ---------- home page actions ---------- */
+.action-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.4rem}
+.action-card{
+  display:block;padding:1.8rem 1.6rem;
+  background:var(--paper-deep);border:1px solid var(--rule);
+  text-decoration:none;color:var(--ink);
+  transition:border-color .15s ease;
+}
+.action-card:hover,.action-card:focus-visible{border-color:var(--marigold)}
+.action-card h3{margin:0 0 .5rem}
+.action-card p{margin:0 0 1.1rem;color:var(--ink-soft);font-size:.98rem;max-width:none}
+.action-card .action-link{display:block;font-size:.85rem;color:var(--blue-soft);letter-spacing:.02em}
+
 /* ---------- photos ---------- */
 .photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:.9rem;margin-top:2.2rem}
 .photo{

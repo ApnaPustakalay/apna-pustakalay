@@ -4,10 +4,10 @@
    Palette: warm paper, wood, cloth, old books, afternoon light.
    ======================================================= */
 :root{
-  --paper:#F5EFE4;
+  --paper:#F5F0E6;
   --paper-deep:#E8DCC4;
-  --ink:#29251F;
-  --ink-soft:#756B5D;
+  --ink:#292722;
+  --ink-soft:#71695C;
   --rule:#DCD0BA;
 
   --wood:#33241A;         /* deep panels */
@@ -15,7 +15,7 @@
   --wood-dim:#B9A88F;
   --wood-text:#D9CBB4;
 
-  --terracotta:#A0523D;
+  --terracotta:#A6533E;
   --olive:#6F7558;
   --chalk:#F6F1E4;
 

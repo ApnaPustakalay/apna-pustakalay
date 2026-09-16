@@ -111,6 +111,7 @@ h2 .en{
 }
 h3{font-family:var(--display);font-weight:400;font-size:1.3rem;margin:0 0 .3rem;line-height:1.3}
 p{margin:0 0 1.15rem;max-width:36rem}
+p a{color:var(--terracotta)}
 .lede{font-size:1.14rem}
 
 /* ---------- preamble ---------- */
@@ -150,7 +151,7 @@ p{margin:0 0 1.15rem;max-width:36rem}
 /* ---------- home page actions ---------- */
 .action-grid{display:grid;grid-template-columns:1fr;gap:1.4rem}
 @media (min-width:700px){
-  .action-grid{grid-template-columns:repeat(3,1fr)}
+  .action-grid{grid-template-columns:repeat(2,1fr)}
 }
 .action-card{
   display:block;padding:1.8rem 1.6rem;

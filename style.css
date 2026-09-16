@@ -54,6 +54,15 @@ img{max-width:100%;display:block}
 
 /* ---------- hero ---------- */
 .hero{background:var(--wood);color:var(--chalk);padding:4.5rem 0 4rem}
+.page-banner{max-height:280px;overflow:hidden}
+.page-banner img{width:100%;height:100%;object-fit:cover}
+
+.hero-photo{
+  background-image:linear-gradient(rgba(51,36,26,.82),rgba(51,36,26,.9)),
+    url("library-illustration.jpg");
+  background-size:cover;
+  background-position:center;
+}
 .wordmark{
   font-family:var(--display);
   font-size:clamp(3rem,11.5vw,6.2rem);
@@ -167,6 +176,15 @@ p{margin:0 0 1.15rem;max-width:36rem}
   display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-size:.8rem;text-align:center;padding:.8rem;
 }
 .portrait img{width:100%;height:100%;object-fit:cover}
+
+/* ---------- book cover inset ---------- */
+.book-cover{
+  float:right;width:150px;margin:0 0 1rem 1.5rem;
+}
+.book-cover img{width:100%;border:1px solid var(--rule)}
+.book-cover figcaption{
+  font-size:.78rem;color:var(--ink-soft);margin-top:.5rem;line-height:1.4;
+}
 
 /* ---------- contact ---------- */
 .rows{margin:2rem 0 0;max-width:34rem}

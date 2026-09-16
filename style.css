@@ -1,21 +1,23 @@
 /* =======================================================
    अपना पुस्तकालय — shared styles
    To change the colours, edit the hex codes below once.
+   Palette: warm paper, wood, cloth, old books, afternoon light.
    ======================================================= */
 :root{
-  --paper:#EEEFE9;
-  --paper-deep:#E3E5DE;
-  --ink:#131E29;
-  --ink-soft:#4C5866;
-  --rule:#D3D6CD;
+  --paper:#F5EFE4;
+  --paper-deep:#E8DCC4;
+  --ink:#29251F;
+  --ink-soft:#756B5D;
+  --rule:#DCD0BA;
 
-  --blue:#15344F;        /* deep panels */
-  --blue-soft:#2B5578;
-  --blue-line:#2F5878;
-  --blue-dim:#96AEC2;
+  --wood:#33241A;         /* deep panels */
+  --wood-line:#5C4632;
+  --wood-dim:#B9A88F;
+  --wood-text:#D9CBB4;
 
-  --marigold:#C0870E;
-  --chalk:#F6F7F3;
+  --terracotta:#A0523D;
+  --olive:#6F7558;
+  --chalk:#F6F1E4;
 
   --display:"Tiro Devanagari Hindi", Georgia, serif;
   --text:"Mukta", system-ui, -apple-system, sans-serif;
@@ -38,20 +40,20 @@ img{max-width:100%;display:block}
 .col{max-width:36rem}
 
 /* ---------- top nav ---------- */
-.nav{background:var(--blue);padding:1.1rem 0}
+.nav{background:var(--wood);padding:1.1rem 0}
 .nav .wrap{display:flex;gap:1.6rem;align-items:center;flex-wrap:wrap}
 .nav a{
-  color:var(--blue-dim);
+  color:var(--wood-dim);
   text-decoration:none;
   font-size:.96rem;
   padding-bottom:2px;
   border-bottom:1px solid transparent;
 }
-.nav a:hover,.nav a:focus-visible{color:var(--chalk);border-bottom-color:var(--marigold)}
+.nav a:hover,.nav a:focus-visible{color:var(--chalk);border-bottom-color:var(--terracotta)}
 .nav a.here{color:var(--chalk)}
 
 /* ---------- hero ---------- */
-.hero{background:var(--blue);color:var(--chalk);padding:4.5rem 0 4rem}
+.hero{background:var(--wood);color:var(--chalk);padding:4.5rem 0 4rem}
 .wordmark{
   font-family:var(--display);
   font-size:clamp(3rem,11.5vw,6.2rem);
@@ -62,14 +64,14 @@ img{max-width:100%;display:block}
 .wordmark-latin{
   font-family:var(--display);
   font-size:clamp(1.05rem,3.2vw,1.55rem);
-  color:var(--marigold);
+  color:var(--terracotta);
   margin:1rem 0 0;
   font-weight:400;
 }
-.hero-line{margin:2rem 0 0;max-width:31rem;font-size:1.1rem;color:#C7D4DE}
+.hero-line{margin:2rem 0 0;max-width:31rem;font-size:1.1rem;color:var(--wood-text)}
 .hero-where{
-  margin:2.4rem 0 0;font-size:.95rem;color:var(--blue-dim);
-  border-top:1px solid var(--blue-line);padding-top:1rem;max-width:31rem;
+  margin:2.4rem 0 0;font-size:.95rem;color:var(--wood-dim);
+  border-top:1px solid var(--wood-line);padding-top:1rem;max-width:31rem;
 }
 
 @media (prefers-reduced-motion:no-preference){
@@ -84,10 +86,10 @@ img{max-width:100%;display:block}
 .band{padding:4.5rem 0}
 .band + .band{border-top:1px solid var(--rule)}
 .band-deep{background:var(--paper-deep)}
-.band-blue{background:var(--blue);color:var(--chalk);border-top:none}
+.band-blue{background:var(--wood);color:var(--chalk);border-top:none}
 .band-blue h2{color:var(--chalk)}
-.band-blue h2 .en{color:var(--blue-dim)}
-.band-blue p{color:#C7D4DE}
+.band-blue h2 .en{color:var(--wood-dim)}
+.band-blue p{color:var(--wood-text)}
 
 h2{
   font-family:var(--display);font-weight:400;
@@ -105,11 +107,11 @@ p{margin:0 0 1.15rem;max-width:36rem}
 .preamble{font-family:var(--display);font-size:1.12rem;line-height:1.75;max-width:34rem}
 .preamble .open{display:block;margin-bottom:1rem}
 .values{list-style:none;margin:0 0 1.2rem;padding:0}
-.values li{padding:.5rem 0 .5rem 1.4rem;border-left:2px solid var(--marigold);margin-bottom:.5rem}
-.values b{font-weight:400;color:var(--marigold);display:block;font-size:.85rem;letter-spacing:.08em;font-family:var(--text)}
+.values li{padding:.5rem 0 .5rem 1.4rem;border-left:2px solid var(--terracotta);margin-bottom:.5rem}
+.values b{font-weight:400;color:var(--terracotta);display:block;font-size:.85rem;letter-spacing:.08em;font-family:var(--text)}
 .preamble-hi{
-  font-family:var(--display);color:#C7D4DE;font-size:1rem;line-height:1.85;
-  border-top:1px solid var(--blue-line);margin-top:2.2rem;padding-top:1.6rem;max-width:34rem;
+  font-family:var(--display);color:var(--wood-text);font-size:1rem;line-height:1.85;
+  border-top:1px solid var(--wood-line);margin-top:2.2rem;padding-top:1.6rem;max-width:34rem;
 }
 
 /* ---------- lists ---------- */
@@ -119,21 +121,21 @@ p{margin:0 0 1.15rem;max-width:36rem}
 .readers p{margin:0;color:var(--ink-soft)}
 
 .books{margin:1.7rem 0 0;padding:0;list-style:none;max-width:36rem}
-.books li{padding:.6rem 0 .6rem 1.6rem;position:relative;border-bottom:1px dotted #C5C9BE}
-.books li::before{content:"";position:absolute;left:0;top:1.15rem;width:.5rem;height:.5rem;background:var(--marigold)}
+.books li{padding:.6rem 0 .6rem 1.6rem;position:relative;border-bottom:1px dotted var(--rule)}
+.books li::before{content:"";position:absolute;left:0;top:1.15rem;width:.5rem;height:.5rem;background:var(--olive)}
 .books strong{font-weight:600}
 
 .note{
   font-size:.95rem;color:var(--ink-soft);
-  border-left:3px solid var(--marigold);padding-left:1.1rem;margin-top:2rem;max-width:34rem;
+  border-left:3px solid var(--terracotta);padding-left:1.1rem;margin-top:2rem;max-width:34rem;
 }
 
 /* ---------- figures ---------- */
 .figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.6rem;margin:2.2rem 0 0;max-width:42rem}
-.fig .n{font-family:var(--display);font-size:2.3rem;line-height:1;color:var(--blue-soft)}
+.fig .n{font-family:var(--display);font-size:2.3rem;line-height:1;color:var(--olive)}
 .fig p{font-size:.92rem;color:var(--ink-soft);margin:.5rem 0 0}
 .src{font-size:.85rem;color:var(--ink-soft);margin-top:2rem}
-.src a{color:var(--blue-soft)}
+.src a{color:var(--terracotta)}
 
 /* ---------- home page actions ---------- */
 .action-grid{display:grid;grid-template-columns:1fr;gap:1.4rem}
@@ -146,35 +148,35 @@ p{margin:0 0 1.15rem;max-width:36rem}
   text-decoration:none;color:var(--ink);
   transition:border-color .15s ease;
 }
-.action-card:hover,.action-card:focus-visible{border-color:var(--marigold)}
+.action-card:hover,.action-card:focus-visible{border-color:var(--terracotta)}
 .action-card h3{margin:0 0 .5rem}
 .action-card p{margin:0 0 1.1rem;color:var(--ink-soft);font-size:.98rem;max-width:none}
-.action-card .action-link{display:block;font-size:.85rem;color:var(--blue-soft);letter-spacing:.02em}
+.action-card .action-link{display:block;font-size:.85rem;color:var(--terracotta);letter-spacing:.02em}
 
 /* ---------- photos ---------- */
 .photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:.9rem;margin-top:2.2rem}
 .photo{
-  aspect-ratio:4/3;background:#D3D7CE;display:flex;align-items:center;
-  justify-content:center;color:#79828C;font-size:.85rem;text-align:center;padding:1rem;
+  aspect-ratio:4/3;background:var(--paper-deep);display:flex;align-items:center;
+  justify-content:center;color:var(--ink-soft);font-size:.85rem;text-align:center;padding:1rem;
 }
 .photo img{width:100%;height:100%;object-fit:cover}
 
 /* ---------- founder ---------- */
 .portrait{
-  width:190px;aspect-ratio:4/5;background:#D3D7CE;margin:0 0 2rem;
-  display:flex;align-items:center;justify-content:center;color:#79828C;font-size:.8rem;text-align:center;padding:.8rem;
+  width:190px;aspect-ratio:4/5;background:var(--paper-deep);margin:0 0 2rem;
+  display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-size:.8rem;text-align:center;padding:.8rem;
 }
 .portrait img{width:100%;height:100%;object-fit:cover}
 
 /* ---------- contact ---------- */
 .rows{margin:2rem 0 0;max-width:34rem}
-.row{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;padding:.9rem 0;border-top:1px solid var(--blue-line)}
-.row:last-child{border-bottom:1px solid var(--blue-line)}
-.row dt{width:7rem;color:var(--blue-dim);font-size:.95rem;margin:0}
+.row{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;padding:.9rem 0;border-top:1px solid var(--wood-line)}
+.row:last-child{border-bottom:1px solid var(--wood-line)}
+.row dt{width:7rem;color:var(--wood-dim);font-size:.95rem;margin:0}
 .row dd{margin:0;flex:1;min-width:12rem}
-.band-blue a{color:var(--marigold);text-underline-offset:3px;text-decoration-thickness:1px}
+.band-blue a{color:var(--terracotta);text-underline-offset:3px;text-decoration-thickness:1px}
 
 footer{padding:2.4rem 0;font-size:.9rem;color:var(--ink-soft)}
 footer a{color:var(--ink-soft)}
 
-a:focus-visible{outline:2px solid var(--marigold);outline-offset:3px}
+a:focus-visible{outline:2px solid var(--terracotta);outline-offset:3px}

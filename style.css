@@ -141,6 +141,23 @@ p a{color:var(--terracotta)}
   border-left:3px solid var(--terracotta);padding-left:1.1rem;margin-top:2rem;max-width:34rem;
 }
 
+/* ---------- checklist ---------- */
+.checklist{
+  border:1px solid var(--rule);background:var(--paper-deep);
+  padding:1.6rem 1.8rem;margin:2rem 0;max-width:34rem;
+}
+.checklist h3{margin:0 0 .3rem;font-size:1.05rem}
+.checklist ul{list-style:none;margin:.8rem 0 0;padding:0}
+.checklist li{
+  position:relative;padding:.6rem 0 .6rem 1.8rem;
+  border-top:1px dotted var(--rule);color:var(--ink-soft);
+}
+.checklist li:first-child{border-top:none}
+.checklist li::before{
+  content:"";position:absolute;left:0;top:.95rem;
+  width:.85rem;height:.85rem;border:1.5px solid var(--terracotta);
+}
+
 /* ---------- figures ---------- */
 .figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.6rem;margin:2.2rem 0 0;max-width:42rem}
 .fig .n{font-family:var(--display);font-size:2.3rem;line-height:1;color:var(--olive)}

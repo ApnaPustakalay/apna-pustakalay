@@ -168,7 +168,7 @@ p a{color:var(--terracotta)}
 /* ---------- home page actions ---------- */
 .action-grid{display:grid;grid-template-columns:1fr;gap:1.4rem}
 @media (min-width:700px){
-  .action-grid{grid-template-columns:repeat(2,1fr)}
+  .action-grid{grid-template-columns:repeat(3,1fr)}
 }
 .action-card{
   display:block;padding:1.8rem 1.6rem;

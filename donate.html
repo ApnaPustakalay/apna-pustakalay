@@ -20,12 +20,58 @@
 
 <nav class="nav">
   <div class="wrap">
-    <a href="index.html">अपना पुस्तकालय</a>
-    <a href="founder.html">About</a>
-    <a href="donate.html" class="here">Donate to Us</a>
-    <a href="volunteer.html">Volunteer with Us</a>
-    <a href="people.html">Founder</a>
-    <a href="contact.html">Contact</a>
+    <details>
+      <summary>अपना पुस्तकालय</summary>
+      <ul class="nav-drop">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Visit</a></li>
+        <li><a href="donate.html">Donate to Us</a></li>
+        <li><a href="volunteer.html">Volunteer with Us</a></li>
+      </ul>
+    </details>
+    <details>
+      <summary>About</summary>
+      <ul class="nav-drop">
+        <li><a href="founder.html">Overview</a></li>
+        <li><a href="founder.html#what-this-is">What this is</a></li>
+        <li><a href="founder.html#not-here">What you won't find here</a></li>
+        <li><a href="founder.html#chopan">Where this is, and why it is needed</a></li>
+        <li><a href="founder.html#photos">Photos</a></li>
+      </ul>
+    </details>
+    <details class="here">
+      <summary>Donate to Us</summary>
+      <ul class="nav-drop">
+        <li><a href="donate.html">Overview</a></li>
+        <li><a href="donate.html#books-list">Books we need</a></li>
+        <li><a href="donate.html#equipment">Library equipment</a></li>
+      </ul>
+    </details>
+    <details>
+      <summary>Volunteer with Us</summary>
+      <ul class="nav-drop">
+        <li><a href="volunteer.html">Overview</a></li>
+        <li><a href="volunteer.html#checklist">Before you sign up</a></li>
+      </ul>
+    </details>
+    <details>
+      <summary>Founder</summary>
+      <ul class="nav-drop">
+        <li><a href="people.html">Overview</a></li>
+        <li><a href="people.html#bio">The founder</a></li>
+        <li><a href="people.html#why">Where the idea came from</a></li>
+        <li><a href="people.html#future">What this is meant to become</a></li>
+      </ul>
+    </details>
+    <details>
+      <summary>Contact</summary>
+      <ul class="nav-drop">
+        <li><a href="contact.html">Overview</a></li>
+        <li><a href="contact.html#find-us">Find us</a></li>
+        <li><a href="contact.html#contact-details">Contact</a></li>
+        <li><a href="contact.html#get-in-touch">Get in touch</a></li>
+      </ul>
+    </details>
   </div>
 </nav>
 
@@ -44,7 +90,7 @@
       The shelves are not full, and this only grows if other people join in. If
       you have books to give, these are the ones that will actually get read:
     </p>
-    <ul class="books">
+    <ul class="books" id="books-list">
       <li><strong>Hindi picture books and stories</strong> for children under twelve</li>
       <li><strong>Hindi non-fiction for young readers</strong> — science, biography, history, the natural world</li>
       <li><strong>Fiction and classics</strong> in Hindi, and in English for stronger readers</li>
@@ -57,7 +103,7 @@
       or wants to — occupies a shelf that a better book should be on. If you're
       unsure, write first.
     </p>
-    <p style="margin-top:2rem">
+    <p id="equipment" style="margin-top:2rem">
       <strong>Beyond books</strong>, we can also use equipment that helps the
       room work as a library: shelves and storage, mats or chairs for reading,
       stationery and craft supplies for children's activities, a fan or good
